@@ -118,3 +118,11 @@ async def delete_student(id: str):
         return Response(status_code=status.HTTP_204_NO_CONTENT,detail=f"Student delete {id} done")
 
     raise HTTPException(status_code=404, detail=f"Student {id} not found")
+
+
+@app.get(
+    "/test/"
+)
+async def test_api():
+
+    return Response(status_code=status.HTTP_200_OK,detail=f"DONE")
