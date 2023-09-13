@@ -125,4 +125,4 @@ async def delete_student(id: str):
 )
 async def test_api():
 
-    return Response(status_code=status.HTTP_200_OK,detail=f"DONE")
+    return Response(status_code=status.HTTP_200_OK,content=f"DONE")
